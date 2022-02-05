@@ -15,15 +15,19 @@ body {
   background-color: var(--primary-color);
 }
 p {
+  margin-top: 0px;
   padding: 5px 15px;
   font-family: "Helvetica", sans-serif;
   line-height: 1.3em;
+  /* background-color: bisque; */
 }
 h2 {
+  margin-bottom: 0px;
   padding: 5px 10px;
   display: block;
   color: var(--secondary-color);
   background-color: var(--accent3-color);
+
 }
 footer {
   display: block;
@@ -32,12 +36,20 @@ footer {
   font-size: 20px;  
   text-decoration: none;
   color: var(--secondary-color);
-  padding: 0px 10px;
+  padding: 10px;
   
 }
-.navbar a:hover {
+.menuItem{
+  position: relative;
+  top: 20px;
+}
+.menuItem:hover {
+
   color: var(--accent3-color);
+
   background-color: var(--secondary-color);
+  opacity: 60%;
+  /* padding: 10px; */
 }
 .monospace{
   font-family: monospace;
@@ -45,8 +57,7 @@ footer {
 .navbar{
   height: 64px;
   background-color: var(--accent3-color); 
-  top: 0px;
-  display: block;
+  /* padding: 10px */
 
 }
 #content {
@@ -54,17 +65,22 @@ footer {
   max-width: 900px;
   margin: 0 auto;
 }
-#bannerImage {
-  /*center this so it displays cleanly*/
-}
+/*#bannerImage {
+  center this so it displays cleanly 
+} */
 #logo{
   height: 64px;
   float: left;
   
 }
+/* #testWidth {
+  width: auto;
+  height: 100%;
+} */
 .section1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0px;
   
 }
 .section2{
@@ -72,6 +88,11 @@ footer {
   grid-template-columns: 1fr 1fr;
 }
 .social {
+  
   display: inline;
-  float: right
+  float: right;
+}
+.social img {
+  max-height: 25px;
+
 }
