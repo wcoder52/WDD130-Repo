@@ -29,11 +29,12 @@ h2 {
   background-color: var(--accent3-color);
 
 }
+
 footer {
   display: block;
 }
 .navbar a {
-  display: grid;
+  /* display: grid; */
   
   font-size: 20px;  
   text-decoration: none;
@@ -75,20 +76,28 @@ footer {
   float: left;
   
 }
-/* #testWidth {
-  width: auto;
-  height: 100%;
+
+.section1, .section2{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+  
+}
+.section1-item, .section2-item{
+  width :50%;
+  min-width: 350px;
+  max-width: 600px;
+  
+  height: auto;
+  flex-shrink: 1;
+  
+}
+/* .section2{
+  display: flex;
+  flex-wrap: wrap;
 } */
-.section1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-  
-}
-.section2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 .social {
   
   display: inline;
