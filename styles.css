@@ -33,6 +33,8 @@ footer {
   display: block;
 }
 .navbar a {
+  display: grid;
+  
   font-size: 20px;  
   text-decoration: none;
   color: var(--secondary-color);
@@ -80,7 +82,7 @@ footer {
 .section1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 0px;
+  
   
 }
 .section2{
