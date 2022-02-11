@@ -68,9 +68,10 @@ footer {
   max-width: 900px;
   margin: 0 auto;
 }
-/*#bannerImage {
-  center this so it displays cleanly 
-} */
+#bannerImage {
+  width:100%;
+  height: auto;
+}
 #logo{
   height: 64px;
   float: left;
