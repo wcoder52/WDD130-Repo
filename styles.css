@@ -6,7 +6,7 @@
   --accent1-color: #FFA9A3;
   --accent2-color: white;
   --accent3-color: #B9E6FF;
-
+  --navHeight: 40px
 }
 
 
@@ -33,34 +33,39 @@ h2 {
 footer {
   display: block;
 }
-.navbar a {
-  /* display: grid; */
-  
-  font-size: 20px;  
+.navbar a{
   text-decoration: none;
+}
+a div {
+
+  font-size: 20px;  
+  height: var(--navHeight);
+  width:110%;
+  text-align: center;
+  line-height: var(--navHeight);
+  
   color: var(--secondary-color);
-  padding: 10px;
+  
+  
   
 }
-.menuItem{
-  position: relative;
-  top: 20px;
-}
-.menuItem:hover {
-
-  color: var(--accent3-color);
-
+.icon:hover {
+  color: var(--accent2-color);
+  
   background-color: var(--secondary-color);
-  opacity: 60%;
-  /* padding: 10px; */
+  opacity: 50%;
 }
+
 .monospace{
   font-family: monospace;
 }
 .navbar{
-  height: 64px;
+  display: flex;
+  width: 100%;
+  height: auto;
   background-color: var(--accent3-color); 
-  /* padding: 10px */
+  column-gap : 10px;
+  
 
 }
 #content {
@@ -73,13 +78,9 @@ footer {
   height: auto;
 }
 #logo{
-  height: 64px;
-  float: left;
+  height: calc(var(--navHeight) * 0.9);
   
 }
-
-
-
 
 .flex-container{
   display: flex;
@@ -103,7 +104,7 @@ footer {
   max-height: 40px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 702px) {
   .flex-container {
     display: flex;
     flex-direction: column;
