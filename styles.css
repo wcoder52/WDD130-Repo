@@ -23,51 +23,60 @@ p {
 }
 h2 {
   margin: 0px;
-  padding: 5px 10px;
+  padding: 10px;
   display: block;
   color: var(--secondary-color);
   background-color: var(--accent3-color);
 
 }
-
 footer {
   display: block;
 }
-.navbar a{
-  text-decoration: none;
-}
-a div {
 
+ul{
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  list-style-type: none;
+
+}
+ul a{
   font-size: 20px;  
   height: var(--navHeight);
-  width:110%;
+  text-decoration: none;
   text-align: center;
   line-height: var(--navHeight);
-  
   color: var(--secondary-color);
-  
-  
-  
 }
-.icon:hover {
+.icon,.icon1{
+  padding :0 8px;
+}
+.icon:hover,.icon1:hover{
   color: var(--accent2-color);
-  
   background-color: var(--secondary-color);
   opacity: 50%;
+  
 }
 
 .monospace{
   font-family: monospace;
 }
 .navbar{
-  display: flex;
   width: 100%;
-  height: auto;
+  height: var(--navHeight);
   background-color: var(--accent3-color); 
-  column-gap : 10px;
-  
-
 }
+.drop_item{
+  display: none;
+  position: absolute;
+  
+  background-color: var(--accent3-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.drop_item a div{
+  text-align: left;}
 #content {
   background-color: var(--accent2-color);
   max-width: 900px;
@@ -75,28 +84,26 @@ a div {
 }
 #bannerImage {
   width:100%;
-  height: auto;
+
 }
 #logo{
   height: calc(var(--navHeight) * 0.9);
-  
+  float:left;
 }
-
 .flex-container{
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .flex-item{
-  width :50%;
+  width :50;
   min-width: 350px;
   height: auto;
   flex-shrink: 1;
   
 }
-
 .social {
-  
   display: inline;
   float: right;
 }
@@ -119,6 +126,20 @@ a div {
   } 
   #smallScreen{
     flex-direction: column-reverse;
+  }
+  .icon{ 
+    display: none;
+  }
+  .drop_item div:hover { /*links in dropdown box*/
+    position: relative;
+    width:100%;
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+    opacity: 50%;
+  } 
+  
+  .dropdown:hover .drop_item{ /*show on hover*/
+    display: block;
   }
 
 }
