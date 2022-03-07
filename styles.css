@@ -1,4 +1,4 @@
-
+/********************* root styles *********************/
 
 :root{
   --primary-color: #7E6C6C;
@@ -8,9 +8,6 @@
   --accent3-color: #B9E6FF;
   --navHeight: 40px
 }
-
-
-
 body {
   background-color: var(--primary-color);
 }
@@ -24,6 +21,7 @@ p {
 h2 {
   margin: 0px;
   padding: 10px;
+  font-family: monospace;
   display: block;
   color: var(--secondary-color);
   background-color: var(--accent3-color);
@@ -33,14 +31,15 @@ footer {
   display: block;
 }
 
-ul{
+header ul{
   display: flex;
   overflow: hidden;
   padding: 0;
   list-style-type: none;
 
 }
-ul a{
+header ul a{
+  font-family: monospace;
   font-size: 20px;  
   height: var(--navHeight);
   text-decoration: none;
@@ -58,9 +57,6 @@ ul a{
   
 }
 
-.monospace{
-  font-family: monospace;
-}
 .navbar{
   width: 100%;
   height: var(--navHeight);
@@ -79,7 +75,7 @@ ul a{
   text-align: left;}
 #content {
   background-color: var(--accent2-color);
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 #bannerImage {
@@ -90,24 +86,6 @@ ul a{
   height: calc(var(--navHeight) * 0.9);
   float:left;
 }
-.flex-container{
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  
-}
-.flex-item{
-  width :50%;
-  min-width: 350px;
-  height: 300px;
-  flex-shrink: 1;
-  
-}
-.flex-item img{
-  height: 100%;
-  width: auto;
-}
 
 .social {
   display: inline;
@@ -116,8 +94,29 @@ ul a{
 .social img {
   max-height: 40px;
 }
+/********************* index.html styles *********************/
+.text-indent{
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.flex-container{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  row-gap: 10px;
+  
+}
+.flex-item{
+  width :50%;
+  min-width: 350px;
+  /* height: 300px; */
+  flex-shrink: 1;
+  
+}
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 900px) {
   .flex-container {
     display: flex;
     flex-direction: column;
@@ -158,8 +157,14 @@ ul a{
     color: var(--accent3-color);
     opacity: 50%;
   } 
-  
   .dropdown:hover .drop_item{ /*show on hover*/
     display: block;
   }
 }
+/********************* rivers.html styles *********************/
+/********************* faq.html styles *********************/
+
+/********************* root styles *********************/
+
+
+
